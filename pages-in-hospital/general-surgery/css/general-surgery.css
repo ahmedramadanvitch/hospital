@@ -1,0 +1,442 @@
+*{
+    transition: all .5s linear;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* height: 2000px; */
+}
+:root{
+    --dark-color: #19283f;
+    --green-color: #2ac2b5;
+    --background-section: #ececec;
+    --icon-color: #009688;
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1200px;
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.main-title{
+    color: var(--green-color);
+}
+.main-hr{
+    color: var(--green-color);
+    width: 120px;
+    margin: auto auto 10px auto;
+    height: 4px !important;
+    border: none;
+    border-radius: 5px;
+}
+.fa-user-doctor{
+    color: var(--green-color);
+    transition: all .5s linear;
+    padding: 0 !important;
+}
+/* start pre-loader */
+#pre-loader{
+    background-color: #313942;
+    background-image: url(../imgs/pre-loader);
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000000;
+    transition: all .3s linear;
+}
+/* end pre-loader */
+/* start nav brand in left of page */
+.navbar{
+    background-color: var(--dark-color);
+    z-index: 1000000;
+    display: none;
+}
+.navbar-brand{
+    color: var(--green-color);
+}
+.navbar-brand .fa-hospital{
+    color: #828f8e;
+    font-size: 40px;
+    animation-name: move-icon;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move-icon {
+    0%{
+        transform: rotate(-10deg);
+        opacity: .5;
+    }
+    100%{
+        transform: rotate(10deg);
+        opacity: 1;
+    }
+}
+.navbar-brand:hover{
+    color: #828f8e;
+}
+.navbar-brand:hover .fa-hospital{
+    color: var(--green-color)!important;
+}
+.navbar-brand:hover span{
+    color: var(--green-color) !important;
+}
+.navbar .nav-link:nth-of-type(1){
+    color: var(--green-color);
+}
+.navbar .nav-link:not(.home):hover{
+    color: var(--green-color) !important;
+}
+.navbar-toggler{
+    color: var(--green-color);
+}
+.navbar .dropdown-menu[data-bs-popper]{
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    top: 57px;
+    left: -20px;
+    margin-top: 4px;
+    background-color: var(--dark-color);
+}
+.navbar .dropdown-item{
+    transition: all .3s linear;
+}
+.navbar .dropdown-item:hover{
+    color: var(--green-color) !important;
+    padding-left: 40px;
+    transition: all .3s linear;
+}
+/* End nav brand in left of page */
+/* %%% start nav brand in center of page %%% */
+.nav{
+    background-color: var(--dark-color);
+    display: none;
+}
+.navbar-brand{
+    margin-left: 1rem;
+    color: var(--green-color);
+}
+.navbar-brand .fa-hospital{
+    color: #828f8e;
+    font-size: 40px;
+    animation-name: move-icon;
+    animation-duration: .5s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move-icon {
+    0%{
+        transform: rotate(-5deg);
+        opacity: .8;
+    }
+    100%{
+        transform: rotate(5deg);
+        opacity: 1;
+    }
+}
+.navbar-brand:hover{
+    color: #828f8e;
+}
+.navbar-brand:hover .fa-hospital{
+    color: var(--green-color)!important;
+}
+.navbar-brand:hover span{
+    color: var(--green-color) !important;
+}
+.nav .active{
+    color: var(--green-color) !important;
+}
+.nav .nav-link{
+    transition: all .3s linear
+}
+.nav .nav-link:hover{
+    color: var(--green-color) !important;
+    transform: scale(1.3);
+    transition: all .3s linear
+}
+.nav-toggler{
+    color: var(--green-color);
+}
+.nav .dropdown-menu{
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    top: 57px;
+    left: -20px;
+    margin-top: 4px;
+    background-color: var(--dark-color);
+}
+.nav .dropdown-item{
+    transition: all .3s linear;
+}
+.nav .dropdown-item:hover{
+    color: var(--green-color) !important;
+    padding-left: 40px;
+    transition: all .3s linear;
+}
+/* %%% End nav brand in center nav %%% */
+
+/* Start media code for nav very important code for me */
+@media (min-width: 880px) {
+    .nav{
+        background-color: var(--dark-color);
+        display: flex;
+    }
+}
+@media (min-width: 300px) and (max-width: 879px) {
+    .navbar{
+        display: block;
+    }
+}
+/* End media code for nav very important code for me */
+
+/* start nav color */
+.nav-color{
+    width: fit-content;
+    height: fit-content;
+    transition: all .3s linear;
+}
+
+.nav-color .brush-icon{
+    z-index: 100;
+    cursor: pointer;
+    position: relative;
+    height: fit-content;
+    left: -10px;
+    padding: 0px 0px 0px 13px;
+    color: var(--green-color);
+}
+.nav-color .switcher{
+    list-style: none;
+    width: fit-content;
+    height: fit-content;
+    background-color: #19283f;
+    padding: 4px;
+    position: absolute;
+    bottom: -60px;
+    right: -20px;
+    border-radius: 5px;
+    display: none !important;
+    transition: all .3s linear !important;
+}
+.nav-color .switcher.open{
+    display: flex !important;
+    transition: all .3s linear !important;
+}
+.nav-color ul li{
+    width: 25px;
+    height: 25px;
+    margin: 2px 2px 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid white;
+    padding: 5px;
+}
+.nav-color ul .active{
+    opacity: .6;
+}
+.nav-color .switcher li:nth-of-type(1){
+    background-color: #2ac2b5;
+}
+.nav-color .switcher li:nth-of-type(2){
+    background-color: #a33327;
+}
+.nav-color .switcher li:nth-of-type(3){
+    background-color: #1787e0;
+}
+@media(max-width:600px){
+    .nav-color{
+        margin-top: 5px;
+    }
+    .nav-color .switcher.open{
+        position: absolute;
+        top: 45px;
+        left: -20px;
+    }
+}
+/* end nav color */
+/* start Emergency */
+.emergency{
+    position: fixed;
+    bottom: 5px;
+    z-index: 1000;
+    left: -5px;
+    animation-name: emergency;
+    animation-duration: .3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes emergency {
+    0%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(3deg);
+    }
+}
+.emergency:hover{
+    animation-name: emergency;
+    animation-play-state: paused;
+}
+@media(max-width:600px){
+    .emergency lord-icon{
+        width: 50px !important;
+        height: 70px !important;
+    }
+}
+/* End Emergency */
+/* start landing */
+.landing{
+    background-image: url(../imgs/doctors.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.landing::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000002c;
+}
+/* End landing */
+/* start general */
+.doctor{
+    border-radius: 135px 10px 10px 135px;
+    box-shadow: 0px 0px 5px 1px var(--green-color);
+    transition: all .5s linear;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+.doctor:hover{
+    box-shadow: 0px 0px 0px 0px var(--green-color) , inset -520px 0px 0px 0px rgba(128, 128, 128, 0.158);
+    transition: all .5s linear;
+}
+.doctor img{
+    position: relative;
+    left: -20px;
+    width: 210px;
+    height: 210px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px 0px black;
+}
+.doctor:hover img{
+    box-shadow: 0px 0px 10px 0px var(--green-color);
+}
+.doctor h5{
+    color: var(--green-color);
+}
+.doctor i{
+    width: 25px !important;
+    color: var(--green-color);
+}
+@media (min-width: 300px) and (max-width: 600px) {
+    .general .doctor{
+        width: 90%;
+        border-radius: 10px;
+    }
+    .doctor img{
+        left: 0px;
+        margin: 20px 0;
+    }
+}
+/* start footer */
+footer{
+    background-color: #19283f;
+}
+footer .container .fa-hospital{
+    color: var(--green-color);
+    transition: all .3s linear;
+    cursor: pointer;
+}
+footer .container .fa-hospital:hover{
+    color: gray;
+    transition: all .3s linear;
+}
+footer h1{
+    transition: all .5s linear;
+}
+footer h1:hover{
+    padding-left: 40px;
+    transition: all .5s linear;
+}
+footer h1 a{
+    color: var(--green-color) !important;
+}
+footer h1:hover a{
+    color: rgb(175, 175, 175) !important;
+}
+footer .corona-img-small{
+    width: 40px;
+    height: 40px;
+    animation-name: move-small-corona;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:reverse;
+}
+@keyframes move-small-corona {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+footer .fa-angles-right{
+    color: var(--green-color);
+}
+footer .links{
+    position: relative;
+    z-index: 100;
+}
+footer .links ul li{
+    transition: all .3s linear;
+}
+footer .links ul li:hover{
+    padding-left: 10px;
+    transition: all .3s linear;
+}
+footer .links ul li:hover a{
+    color: var(--green-color) !important;
+}
+footer .links ul li:hover .fa-angles-right{
+    color: rgb(158, 158, 158) !important;
+}
+footer .address ul li i{
+    color: var(--green-color);
+    transition: all .3s linear;
+}
+footer .address ul li:hover i{
+    color: gray;
+    transition: all .3s linear;
+}
+footer .address ul li:hover p{
+    color: var(--green-color);
+    transition: all .3s linear;
+}
+footer .created i{
+    transition: all .5s linear;
+}
+footer .created:hover i{
+    color: red;
+    transition: all .5s linear;
+}
+/* End footer */

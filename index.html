@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dar Altib</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google font this font not work -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;900&family=Modern+Antiqua&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- google font ropoto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;900&family=Modern+Antiqua&family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <!-- wow.js for animate -->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.js"></script>
+    <!-- aos.js -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/hospital.css">
+</head>
+<body>
+
+    <!-- start pre-loader -->
+    <div id="pre-loader" style="background-image: url(imgs/pre-loader);"></div>
+    <!-- end pre-loader -->
+    <!-- start nav ---- brand in left of page  mobile screen -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand fs-2 fw-bold" href="#">
+            <i class="fa-solid fa-hospital me-1"></i>
+              Dar Altib
+            <span class="fs-5 text-white-50">.Hos</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-list"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 p-2">
+              <li class="nav-item">
+                <a class="nav-link pe-3 active fs-5 home" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-3 text-white-50 fs-5" href="#our-team-leader">Our Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-3 text-white-50 fs-5" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link pe-3 text-white-50 fs-5" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link pe-3 dropdown-toggle text-white-50 fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Other
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item pt-2 text-white-50" href="#sections">Sections</a></li>
+                  <hr class="m-0">
+                  <li><a class="dropdown-item pt-2 text-white-50" href="#features">Features</a></li>
+                  <hr class="m-0">
+                  <li><a class="dropdown-item pt-2 pb-2 text-white-50" href="#skills">Skills</a></li>
+                  <hr class="m-0">
+                  <li><a class="dropdown-item pt-2 pb-2 text-white-50" href="pages-in-hospital/contact/contact.html">Contact Us</a></li>
+                </ul>
+              </li>
+              <!-- End nav color -->
+              <li class="nav-item position-relative">
+                <div class="nav-color position-relative">
+                  <ul class="switcher">
+                      <li data-color="#2ac2b5" data-bg="#19283f" class="active"></li>
+                      <li data-color="#a33327" data-bg="#a33327"></li>
+                      <li data-color="#1787e0" data-bg="#19283f"></li>
+                  </ul>
+                  <i class="fas fa-palette brush-icon fs-4"></i>
+                </div>
+              </li>
+              <!-- End nav color -->
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- End nav ---- brand in left of page  -->
+
+    <!-- %%% start nav brand in center of page %%% large screen -->
+    <ul id="navbarSupportedContent" class="nav p-2 navbar-expand-lg fixed-top justify-content-center align-items-center">
+      
+      <li class="nav-item">
+        <a class="nav-link active fs-5 home" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50 fs-5" href="#our-team-leader">Our Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50 fs-5" href="#about">About</a>
+      </li>
+      <li class="nav-item brand">
+        <a class="navbar-brand fs-1 fw-bold" href="#">
+          <i class="fa-solid fa-hospital me-1"></i>
+            Dar Altib
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50 fs-5" href="#gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-white-50 fs-5" href="#sections">Sections</a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white-50 fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Other
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="navbarDropdown">
+
+          <li><a class="dropdown-item pt-2 text-white-50" href="#features">Features</a></li>
+          <hr class="m-0">
+          <li><a class="dropdown-item pt-2 pb-2 text-white-50" href="#skills">Skills</a></li>
+          <hr class="m-0">
+          <li><a class="dropdown-item pt-2 pb-2 text-white-50" href="pages-in-hospital/contact/contact.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <!-- start nav color -->
+      <li class="nav-item position-relative">
+        <div class="nav-color nav-color-large position-relative">
+          <ul class="switcher switcher-large">
+              <li data-color="#2ac2b5" data-bg="#19283f" class="active"></li>
+              <li data-color="#a33327" data-bg="#a33327"></li>
+              <li data-color="#1787e0" data-bg="#19283f"></li>
+          </ul>
+          <i class="fas fa-palette brush-icon fs-4"></i>
+        </div>
+      </li>
+      <!-- End nav color -->
+    </ul>
+    <!-- %%% End nav brand in center of page %%% -->
+
+    <!-- start Emergency -->
+    <a href="pages-in-hospital/emergency/emer.html" class="emergency">
+      <!-- <i class="fa-solid fa-e emergency fa-2x" title="Emergency"></i> -->
+      <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/kibcffov.json"
+          trigger="loop"
+          delay="1000"
+          colors="outline:#121331,primary:#16c79e,secondary:#16c79e,tertiary:#4bb3fd,quaternary:#ffc738,quinary:#ebe6ef,senary:#646e78"
+          style="width:70px;height:70px">
+      </lord-icon>
+    </a>
+    <!-- End Emergency -->
+
+    <!-- start landing -->
+    <div class="landing position-relative" id="landing">
+      <video src="imgs/hos-new.mp4" autoplay muted loop></video>
+    </div>
+    <!-- end landing -->
+    
+    <!-- start button up page -->
+    <!-- <i class="fas fa-arrow-circle-up fa-2x btn-up"></i> -->
+    <a class="btn-up">
+      <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/qsacmnwj.json"
+          trigger="loop"
+          delay="1000"
+          style="width:50px;height:50px">
+      </lord-icon>
+    </a>
+    <!-- End button up page -->
+    
+    <!-- Start team-leader -->
+    <div class="leader position-relative text-center pt-5" id="our-team-leader">
+      <div class="container">
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold text-center" data-aos="fade-down" data-aos-duration="1000">Our Team Leader</h1>
+        <hr class="main-hr">
+
+        <div class="row mt-5 justify-content-around">
+
+          <div class="leader-1 pb-3 mt-5 col-lg4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
+          
+              <div class="img-icon">
+                <img src="imgs/walter-otto-PT70CT6mATQ-unsplash.jpg" class="img-fluid" alt="...">
+                <div class="icon-lead">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="text-leader">
+                <h5 class="fw-bold fs-5">Dr. Khadija Ahmed</h5>
+                <p class="text-black-50 ">Some quick example text to build on the card title.</p>
+                <a href="#" target="_blank">
+                  <button type="button" class="btn text-white rounded-pill">Info</button>
+                </a>
+              </div>
+
+          </div>
+          <div class="leader-1 pb-3 ms-lg-5 ms-md-4  mt-5 col-lg4 col-md-6 col-sm-12" data-aos="fade-down" data-aos-duration="3000">
+          
+              <div class="img-icon">
+                <img src="imgs/leader.jpg" class="img-fluid" alt="...">
+                <div class="icon-lead">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="text-leader">
+                <h5 class="fw-bold fs-5">Dr. Asma mansour </h5>
+                <p class="text-black-50 ">Some quick example text to build on the card title.</p>
+                <button type="button" class="btn text-white rounded-pill">Info</button>
+              </div>
+
+          </div>
+          <div class="leader-1 pb-3 ms-lg-5 mb-5 mt-5 col-lg4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-duration="3000">
+          
+              <div class="img-icon">
+                <img src="imgs/leader2.jpg" class="img-fluid w-100" alt="...">
+                <div class="icon-lead">
+                  <a href="#">
+                    <i class="fa-brands fa-facebook fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              
+              <div class="text-leader">
+                <h5 class="fw-bold fs-5">Dr. Ahmed Ramadan</h5>
+                <p class="text-black-50 ">Some quick example text to build on the card title.</p>
+                <button type="button" class="btn text-white rounded-pill">Info</button>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End team-leader -->
+    
+    <!-- start about us -->
+    <div class="about text-center p-5" id="about">
+        <div class="container">
+            
+            <i class="fa-solid fa-stethoscope fa-3x"></i>
+            <h1 class="main-title pt-4 pb-2 fw-bold" data-aos="fade-down" data-aos-duration="1000">About Us</h1>
+            <hr class="main-hr">
+            
+            <div class="row">
+              <div class="card mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-card img-1">
+                  <img src="imgs/about2.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-3">Quality</h5>
+                  <hr class="main-hr">
+                  <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn main-btn fw-bold button-1">Quality</a>
+                </div>
+              </div>
+              
+              <div class="card mt-5" data-aos="fade-down" data-aos-duration="1000">
+                <div class="img-card img-2">
+                  <img src="imgs/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-3">cleanliness</h5>
+                  <hr class="main-hr">
+                  <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn main-btn fw-bold button-2">cleanliness</a>
+                </div>
+              </div>
+              
+              <div class="card mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="img-card img-3">
+                  <img src="imgs/about4.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title fw-bold fs-3">price</h5>
+                  <hr class="main-hr">
+                  <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn main-btn fw-bold button-3">price</a>
+                </div>
+              </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End about us -->
+    
+    <!-- start gallery -->
+    <div class="gallery text-center position-relative p-5" id="gallery">
+      <div class="container">
+
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold" data-aos="fade-down" data-aos-duration="1000">Gallery</h1>
+        <hr class="main-hr">
+
+
+
+        <div class="slider-container" data-aos="fade-up" data-aos-duration="1000">
+          <div id="slide-number" class="slide-number"></div>
+          <img src="imgs/gallary-g (1).jpg" alt="" />
+          <img src="imgs/gallary-g (2).jpg" alt="" />
+          <img src="imgs/gallery-gall (1).jpg" alt="" />
+          <img src="imgs/gallery-gall (2).jpg" alt="" />
+          <img src="imgs/gallery-gall (3).jpg" alt="" />
+          <img src="imgs/gallery-gall23.jpg" alt="" />
+        </div>
+        <div class="slider-controls" data-aos="fade-up" data-aos-duration="1000">
+            
+          <span id="prev" class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+          </span>
+
+          <span id="indicators" class="indicators"></span>
+          
+          <span id="next" class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <div class="row pt-5 pb-3 justify-content-around gap-4">
+
+          <div class="img-box" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/gallery-gall (1).jpg" class="img-fluid" alt="doctor1">
+          </div>
+          
+          <div class="img-box" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/gallery1 (1).jpg" class="img-fluid" alt="doctor1">
+          </div>
+          
+          <div class="img-box" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/gallery-gall (2).jpg" class="img-fluid" alt="doctor1">
+          </div>
+
+          <div class="img-box" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/gallery-gall (3).jpg" class="img-fluid" alt="doctor1">
+          </div>
+
+          <div class="img-box" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/gallery1 (4).jpg" class="img-fluid" alt="doctor1">
+          </div>
+
+          <div class="img-box" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/gallery-gall23.jpg" class="img-fluid" alt="doctor1">
+          </div>
+
+        </div> -->
+      </div>
+    </div>
+    <!-- End gallery -->
+    
+    <!-- start sections-->
+    <div class="sections text-center pt-5 pb-5" id="sections">
+      <div class="container">
+        
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold" data-aos="fade-down" data-aos-duration="1000">Sections</h1>
+        <hr class="main-hr">
+
+        <div class="row pt-5 pb-3 justify-content-around gap-5">
+          
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/sec-الجراحه.png" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">General Surgery</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/download.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Internal Medicine</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+          
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/sec-النفسى.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Psychiatry</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/sec-النووىnuclear-medicine.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">nuclear medicine</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/sec-الاسنان.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">dentist</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+          
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/sec-الاعصاب.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Neurology</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+          
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/sec-النساء.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Gynecology</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+          
+          <div class="card p-0" style="width: 18rem;" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/sec1-eays.jpg" class="card-img-top" style="height: 210px;" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">ophthalmology</h5>
+              <p class="card-text text-black-50">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="pages-in-hospital/general-surgery/general-surgery.html" class="btn btn-success rounded-pill"> Visit Now </a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+    <!-- End sections-->
+    
+    <!-- Start features  الشكل الاول      -->
+    <!-- <div class="features text-center position-relative pt-5 pb-5" id="features">
+      <div class="container">
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold">Features</h1>
+        <hr class="main-hr">
+
+        <div class="d-flex flex-column align-items-center">
+          
+          <div class="feat-img">
+            <img src="imgs/feature1.webp" class="img-fluid" alt="feature-img">
+          </div>
+
+          <div class="feat-text flex-column flex-sm-row col-9 p-4">
+            <div class="box-icon-text d-flex align-items-center">
+              <div class="box-icon d-none d-sm-block">
+                <i class="fa-solid fa-hand-holding-dollar p-2 fa-5x"></i>
+              </div>
+              <div class="box-text text-start ps-3">
+                <h3 class="fw-bold">cheap prices</h3>
+                <p class="lead text-black-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="d-flex flex-column align-items-center pt-5">
+          
+          <div class="feat-img">
+            <img src="imgs/feature2.webp" class="img-fluid" alt="feature-img">
+          </div>
+
+          <div class="feat-text flex-column flex-sm-row col-9 p-4">
+            <div class="box-icon-text d-flex align-items-center">
+              <div class="box-icon d-none d-sm-block">
+                <i class="fa-solid fa-house-medical-circle-check p-2 fa-5x"></i>
+              </div>
+              <div class="box-text text-start ps-3">
+                <h3 class="fw-bold">cheap prices</h3>
+                <p class="lead text-black-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam quis laborum recusandae debitis vel</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+    <!-- End features  الشكل الاول -->
+    
+    <!-- start features   الشكل الثانى -->
+    <div class="features position-relative text-center p-5" id="features">
+      <div class="container">
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold" data-aos="fade-down" data-aos-duration="1000">Features</h1>
+        <hr class="main-hr">
+
+        <div class="row pt-5 align-items-center">
+          
+          <div class="feat-img col-lg-6 col-md-12" data-aos="fade-down" data-aos-duration="1000">
+            <img src="imgs/feature1.webp" class="img-fluid" alt="feature-img">
+          </div>
+
+          <div class="feat-boxes d-flex flex-column gap-4 col-lg-6 col-md-12">
+            
+            <div class="text-icon d-flex border border-secondery p-3 rounded align-items-center" data-aos="fade-down" data-aos-duration="500">
+              <!-- <i class="fa-solid fa-hand-holding-dollar pe-4 fa-5x"></i> -->
+              <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/pimvysaa.json"
+                  trigger="loop"
+                  delay="1500"
+                  colors="outline:#121331,primary:#b26836,secondary:#30e8bd"
+                  style="width:200px;height:100px">
+              </lord-icon>
+              <div class="text-start">
+                <h4 class="fw-bold">Cheap Prices</h4>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisiciTempora optio soluta, officiis corrupti voluptates assumenda.</p>
+              </div>
+            </div>
+            
+            <div class="text-icon d-flex border border-secondery p-3 rounded align-items-center" data-aos="fade-up" data-aos-duration="1500">
+              <!-- <i class="fa-solid fa-house-medical-circle-check pe-4 fa-5x"></i> -->
+              <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/fdaaenax.json"
+                  trigger="loop"
+                  delay="1500"
+                  colors="outline:#121331,primary:#30e8bd"
+                  style="width:200px;height:100px">
+              </lord-icon>
+              <div class="text-start">
+                <h4 class="fw-bold">Excellent Services</h4>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisiciTempora optio soluta, officiis corrupti voluptates assumenda.</p>
+              </div>
+            </div>
+            
+            <div class="text-icon d-flex border border-secondery p-3 rounded align-items-center" data-aos="fade-down" data-aos-duration="3000">
+              <!-- <i class="fa-solid fa-truck-medical pe-4 fa-5x"></i> -->
+              <script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/kibcffov.json"
+                  trigger="loop"
+                  delay="1500"
+                  colors="outline:#121331,primary:#3a3347,secondary:#93150d,tertiary:#4bb3fd,quaternary:#ffc738,quinary:#30e8bd,senary:#646e78"
+                  style="width:200px;height:100px">
+              </lord-icon>
+              <div class="text-start">
+                <h4 class="fw-bold"> Ambulance car</h4>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisiciTempora optio soluta, officiis corrupti voluptates assumenda.</p>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end features  الشكل الثانى -->
+    
+    <!-- Start skills -->
+    <div class="skills p-5 text-center" id="skills">
+      <div class="container">
+        <i class="fa-solid fa-stethoscope fa-3x"></i>
+        <h1 class="main-title pt-4 pb-2 fw-bold" data-aos="fade-down" data-aos-duration="1000">Our Skills</h1>
+        <hr class="main-hr">
+        <div class="row pt-5 align-items-center justify-content-around">
+
+          <div class="all-prog pb-5 col-lg-5 col-md-12" data-aos="fade-down" data-aos-duration="1000">
+
+            <h4 class="text-start mt-4 mb-2 fw-bold text-success">failure</h4>
+            <div class="progress">
+              <div class="progress-bar bg-success fs-6" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+
+            <h4 class="text-start mt-4 mb-2 fw-bold text-info">paying off</h4>
+            <div class="progress">
+              <div class="progress-bar bg-info fs-6" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            
+            <h4 class="text-start mt-4 mb-2 fw-bold text-warning">transaction</h4>
+            <div class="progress">
+              <div class="progress-bar bg-warning fs-6" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            
+            <h4 class="text-start mt-4 mb-2 fw-bold text-danger">care</h4>
+            <div class="progress">
+              <div class="progress-bar bg-danger fs-6" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
+            </div>
+          </div>
+
+          <div class="skill-img d-lg-block d-sm-none col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="1000">
+            <img src="imgs/people.svg" class="img-fluid" alt="screen">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End skills -->
+
+    <!-- start footer -->
+    <footer class="text-white-50 pt-4 pb-2 ps-5 pe-5">
+      <div class="container">
+        <div class="text-center pb-5" data-aos="fade-up" data-aos-duration="1000">
+          <i class="fa-solid fa-hospital fa-8x m-auto"></i>
+        </div>
+        
+        <div class="row">
+
+          <div class="col-lg-4 col-md-12" data-aos="fade-down" data-aos-duration="1000">
+            <h1>
+              <!-- <i class="fa-solid fa-virus-covid"></i> -->
+              <img src="imgs/small-corona.svg" class="corona-img-small mb-2 position-relative">
+              <a href="#">Dar Altib</a>
+            </h1>
+            <p class="pt-3 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quidem saepe minima rem error doloremque dolor </p>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 links" data-aos="fade-up" data-aos-duration="1000">
+            <ul class="ps-0">
+              <li class="pb-1">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="#landing" class=" text-uppercase text-white-50">home</a>
+              </li>
+              <hr class="p-0 m-0">
+              <li class="pb-2 pt-2">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="#our-team-leader" class="text-uppercase text-white-50">our team leader</a>
+              </li>
+              <hr class="p-0 m-0">
+              <li class="pb-2 pt-2">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="#about" class="text-uppercase text-white-50">about</a>
+              </li>
+              <hr class="p-0 m-0">
+              <li class="pb-2 pt-2">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="#gallery" class="text-uppercase text-white-50">gallery</a>
+              </li>
+              <hr class="p-0 m-0">
+              <li class="pb-2 pt-2">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="#features" class="text-uppercase text-white-50">features</a>
+              </li>
+              <hr class="p-0 m-0">
+              <li class="pb-2 pt-2">
+                <i class="fa-solid fa-angles-right pe-1"></i>
+                <a href="pages-in-hospital/contact/contact.html" class="text-uppercase text-white-50">contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 address" data-aos="fade-down" data-aos-duration="1000">
+            <ul class="ps-0">
+              <li class="d-flex align-items-center pt-3 pb-2">
+                <i class="fa-solid fa-location-dot fa-2x pe-3"></i>
+                <p class="m-0">Egypt, sohag, Next to police office</p>
+              </li>
+              <li class="d-flex align-items-center pt-3 pb-2">
+                <i class="fa-solid fa-clock fa-2x pe-3"></i>
+                <p class="m-0">Business Hours: 24 hours</p>
+              </li>
+              <li class="d-flex align-items-center pt-3 pb-2">
+                <i class="fa-solid fa-phone-volume fa-2x pe-3"></i>
+                <p class="m-0">+20123456789<br>+20198765432</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <hr>
+        <p class="created text-center fw-bold">
+          Created By <br>
+          <i class="fas fa-heart"></i> 
+          AHMED RAMADAN
+          <i class="fas fa-heart"></i> 
+      </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- wow animate .js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <!-- Aos animate .js -->
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/hospital.js"></script>
+</body>
+</html>
